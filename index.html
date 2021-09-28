@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
       <div class="keep-track-body">
         <img class="computer" src="./images/image-computer.png" alt="computer">
         <div class="keep-track-right">
-          <div class="title-subtitle">
+          <div id="kt1" class="title-subtitle">
             <h3 class="title">Quick Search</h2>
             <p class="subtitle">
                Easily search your snippets by content, category, web address, application, and more.
@@ -75,7 +76,7 @@
         </p>
       </div>
       <div class="devices">
-        <img src="./images/image-devices.png" alt="Devices">
+        <img class="device" src="./images/image-devices.png" alt="Devices">
       </div>
   </div>
 </section>
@@ -113,12 +114,14 @@
 <!-- End Supercharge Section -->
 <!-- Start Companies Section -->
 <section class="section company-section">
-  <div class="companies">
-     <img src="./images/logo-google.png" alt="Google" class="company-logo">
-     <img src="./images/logo-ibm.png" alt="IBM" class="company-logo">
-     <img src="./images/logo-microsoft.png" alt="Microsoft" class="company-logo">
-     <img src="./images/logo-hp.png" alt="Hewlett Packard Enterprise" class="company-logo">
-     <img src="./images/logo-vector-graphics.png" alt="Vector Graphics" class="company-logo">
+  <div class="container">
+    <div class="companies">
+      <img src="./images/logo-google.png" alt="Google" class="company-logo">
+      <img src="./images/logo-ibm.png" alt="IBM" class="company-logo">
+      <img src="./images/logo-microsoft.png" alt="Microsoft" class="company-logo">
+      <img src="./images/logo-hp.png" alt="Hewlett Packard Enterprise" class="company-logo">
+      <img src="./images/logo-vector-graphics.png" alt="Vector Graphics" class="company-logo last-logo">
+    </div>   
   </div>
 </section>
 <!-- End Companies Section -->
@@ -141,25 +144,29 @@
 <!-- Start Footer Section -->
 <footer class="footer">
   <div class="container">
+    <div class="logo">
       <img class="footer-logo" src="./images/logo.svg" alt="Clipboard">
+    </div>
+    <div class="lists-icons">
       <ul class="lists">
-        <li class="list-item">FAQs</li>
-        <li class="list-item">Contact Us</li>
-        <li class="list-item">Privacy Policy</li>
-        <li class="list-item">Press Kit</li>
-        <li class="list-item">Install Guide</li>
+        <li class="list-item"> <a href="#">FAQs</a></li>
+        <li class="list-item"> <a href="#">Contact Us</a></li>
+        <li class="list-item"> <a href="#">Privacy Policy</a></li>
+        <li class="list-item"><a href="#">Press Kit</a></li>
+        <li class="list-item"><a href="#">Install Guide</a></li>
       </ul>
     <ul class="social-icons">
       <li class="social-icon">
-        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"><img src="./images//icon-facebook.svg" alt="Facebook"></a>
+        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"><i class="icon fab fa-facebook-square"></i></a>
       </li>
          <li class="social-icon">
-        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"><img src="./images//icon-twitter.svg" alt="Twitter"></a>
+        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"><i class="icon fab fa-twitter"></i></a>
       </li>
          <li class="social-icon">
-        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"><img src="./images//icon-instagram.svg" alt="Instagram"></a>
+        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer"><i class="icon fab fa-instagram"></i></a>
       </li>
-    </ul>
+    </ul>   
+    </div>
   </div>
 </footer>
 <!-- End Footer Section -->
